@@ -1,0 +1,663 @@
+{
+  "evaluation": "original full-agent roster growth",
+  "baseline_commit": "5b5f635935a64ab37884c025d70abb0ed731c094",
+  "baseline_source_commit": "659e03c7a45e418f403200e6b36623d297b37626",
+  "authored_roster_cases": 7,
+  "shuffled_seeds": 5,
+  "total_executions": 105,
+  "summary": [
+    {
+      "agents": 10,
+      "executions": 35,
+      "mean_roster_bytes": 501,
+      "min_roster_bytes": 481,
+      "max_roster_bytes": 527
+    },
+    {
+      "agents": 100,
+      "executions": 35,
+      "mean_roster_bytes": 4905,
+      "min_roster_bytes": 4869,
+      "max_roster_bytes": 4940
+    },
+    {
+      "agents": 500,
+      "executions": 35,
+      "mean_roster_bytes": 24964,
+      "min_roster_bytes": 24908,
+      "max_roster_bytes": 25019
+    }
+  ],
+  "runs": [
+    {
+      "case": 0,
+      "agents": 10,
+      "seed": 0,
+      "roster_bytes": 513
+    },
+    {
+      "case": 0,
+      "agents": 10,
+      "seed": 1,
+      "roster_bytes": 512
+    },
+    {
+      "case": 0,
+      "agents": 10,
+      "seed": 2,
+      "roster_bytes": 501
+    },
+    {
+      "case": 0,
+      "agents": 10,
+      "seed": 3,
+      "roster_bytes": 498
+    },
+    {
+      "case": 0,
+      "agents": 10,
+      "seed": 4,
+      "roster_bytes": 492
+    },
+    {
+      "case": 0,
+      "agents": 100,
+      "seed": 0,
+      "roster_bytes": 4921
+    },
+    {
+      "case": 0,
+      "agents": 100,
+      "seed": 1,
+      "roster_bytes": 4880
+    },
+    {
+      "case": 0,
+      "agents": 100,
+      "seed": 2,
+      "roster_bytes": 4885
+    },
+    {
+      "case": 0,
+      "agents": 100,
+      "seed": 3,
+      "roster_bytes": 4924
+    },
+    {
+      "case": 0,
+      "agents": 100,
+      "seed": 4,
+      "roster_bytes": 4924
+    },
+    {
+      "case": 0,
+      "agents": 500,
+      "seed": 0,
+      "roster_bytes": 24999
+    },
+    {
+      "case": 0,
+      "agents": 500,
+      "seed": 1,
+      "roster_bytes": 24924
+    },
+    {
+      "case": 0,
+      "agents": 500,
+      "seed": 2,
+      "roster_bytes": 24919
+    },
+    {
+      "case": 0,
+      "agents": 500,
+      "seed": 3,
+      "roster_bytes": 25006
+    },
+    {
+      "case": 0,
+      "agents": 500,
+      "seed": 4,
+      "roster_bytes": 24983
+    },
+    {
+      "case": 1,
+      "agents": 10,
+      "seed": 0,
+      "roster_bytes": 502
+    },
+    {
+      "case": 1,
+      "agents": 10,
+      "seed": 1,
+      "roster_bytes": 501
+    },
+    {
+      "case": 1,
+      "agents": 10,
+      "seed": 2,
+      "roster_bytes": 490
+    },
+    {
+      "case": 1,
+      "agents": 10,
+      "seed": 3,
+      "roster_bytes": 487
+    },
+    {
+      "case": 1,
+      "agents": 10,
+      "seed": 4,
+      "roster_bytes": 481
+    },
+    {
+      "case": 1,
+      "agents": 100,
+      "seed": 0,
+      "roster_bytes": 4910
+    },
+    {
+      "case": 1,
+      "agents": 100,
+      "seed": 1,
+      "roster_bytes": 4869
+    },
+    {
+      "case": 1,
+      "agents": 100,
+      "seed": 2,
+      "roster_bytes": 4874
+    },
+    {
+      "case": 1,
+      "agents": 100,
+      "seed": 3,
+      "roster_bytes": 4913
+    },
+    {
+      "case": 1,
+      "agents": 100,
+      "seed": 4,
+      "roster_bytes": 4913
+    },
+    {
+      "case": 1,
+      "agents": 500,
+      "seed": 0,
+      "roster_bytes": 24988
+    },
+    {
+      "case": 1,
+      "agents": 500,
+      "seed": 1,
+      "roster_bytes": 24913
+    },
+    {
+      "case": 1,
+      "agents": 500,
+      "seed": 2,
+      "roster_bytes": 24908
+    },
+    {
+      "case": 1,
+      "agents": 500,
+      "seed": 3,
+      "roster_bytes": 24995
+    },
+    {
+      "case": 1,
+      "agents": 500,
+      "seed": 4,
+      "roster_bytes": 24972
+    },
+    {
+      "case": 2,
+      "agents": 10,
+      "seed": 0,
+      "roster_bytes": 514
+    },
+    {
+      "case": 2,
+      "agents": 10,
+      "seed": 1,
+      "roster_bytes": 513
+    },
+    {
+      "case": 2,
+      "agents": 10,
+      "seed": 2,
+      "roster_bytes": 502
+    },
+    {
+      "case": 2,
+      "agents": 10,
+      "seed": 3,
+      "roster_bytes": 499
+    },
+    {
+      "case": 2,
+      "agents": 10,
+      "seed": 4,
+      "roster_bytes": 493
+    },
+    {
+      "case": 2,
+      "agents": 100,
+      "seed": 0,
+      "roster_bytes": 4922
+    },
+    {
+      "case": 2,
+      "agents": 100,
+      "seed": 1,
+      "roster_bytes": 4881
+    },
+    {
+      "case": 2,
+      "agents": 100,
+      "seed": 2,
+      "roster_bytes": 4886
+    },
+    {
+      "case": 2,
+      "agents": 100,
+      "seed": 3,
+      "roster_bytes": 4925
+    },
+    {
+      "case": 2,
+      "agents": 100,
+      "seed": 4,
+      "roster_bytes": 4925
+    },
+    {
+      "case": 2,
+      "agents": 500,
+      "seed": 0,
+      "roster_bytes": 25000
+    },
+    {
+      "case": 2,
+      "agents": 500,
+      "seed": 1,
+      "roster_bytes": 24925
+    },
+    {
+      "case": 2,
+      "agents": 500,
+      "seed": 2,
+      "roster_bytes": 24920
+    },
+    {
+      "case": 2,
+      "agents": 500,
+      "seed": 3,
+      "roster_bytes": 25007
+    },
+    {
+      "case": 2,
+      "agents": 500,
+      "seed": 4,
+      "roster_bytes": 24984
+    },
+    {
+      "case": 3,
+      "agents": 10,
+      "seed": 0,
+      "roster_bytes": 505
+    },
+    {
+      "case": 3,
+      "agents": 10,
+      "seed": 1,
+      "roster_bytes": 504
+    },
+    {
+      "case": 3,
+      "agents": 10,
+      "seed": 2,
+      "roster_bytes": 493
+    },
+    {
+      "case": 3,
+      "agents": 10,
+      "seed": 3,
+      "roster_bytes": 490
+    },
+    {
+      "case": 3,
+      "agents": 10,
+      "seed": 4,
+      "roster_bytes": 484
+    },
+    {
+      "case": 3,
+      "agents": 100,
+      "seed": 0,
+      "roster_bytes": 4913
+    },
+    {
+      "case": 3,
+      "agents": 100,
+      "seed": 1,
+      "roster_bytes": 4872
+    },
+    {
+      "case": 3,
+      "agents": 100,
+      "seed": 2,
+      "roster_bytes": 4877
+    },
+    {
+      "case": 3,
+      "agents": 100,
+      "seed": 3,
+      "roster_bytes": 4916
+    },
+    {
+      "case": 3,
+      "agents": 100,
+      "seed": 4,
+      "roster_bytes": 4916
+    },
+    {
+      "case": 3,
+      "agents": 500,
+      "seed": 0,
+      "roster_bytes": 24991
+    },
+    {
+      "case": 3,
+      "agents": 500,
+      "seed": 1,
+      "roster_bytes": 24916
+    },
+    {
+      "case": 3,
+      "agents": 500,
+      "seed": 2,
+      "roster_bytes": 24911
+    },
+    {
+      "case": 3,
+      "agents": 500,
+      "seed": 3,
+      "roster_bytes": 24998
+    },
+    {
+      "case": 3,
+      "agents": 500,
+      "seed": 4,
+      "roster_bytes": 24975
+    },
+    {
+      "case": 4,
+      "agents": 10,
+      "seed": 0,
+      "roster_bytes": 509
+    },
+    {
+      "case": 4,
+      "agents": 10,
+      "seed": 1,
+      "roster_bytes": 508
+    },
+    {
+      "case": 4,
+      "agents": 10,
+      "seed": 2,
+      "roster_bytes": 497
+    },
+    {
+      "case": 4,
+      "agents": 10,
+      "seed": 3,
+      "roster_bytes": 494
+    },
+    {
+      "case": 4,
+      "agents": 10,
+      "seed": 4,
+      "roster_bytes": 488
+    },
+    {
+      "case": 4,
+      "agents": 100,
+      "seed": 0,
+      "roster_bytes": 4917
+    },
+    {
+      "case": 4,
+      "agents": 100,
+      "seed": 1,
+      "roster_bytes": 4876
+    },
+    {
+      "case": 4,
+      "agents": 100,
+      "seed": 2,
+      "roster_bytes": 4881
+    },
+    {
+      "case": 4,
+      "agents": 100,
+      "seed": 3,
+      "roster_bytes": 4920
+    },
+    {
+      "case": 4,
+      "agents": 100,
+      "seed": 4,
+      "roster_bytes": 4920
+    },
+    {
+      "case": 4,
+      "agents": 500,
+      "seed": 0,
+      "roster_bytes": 24995
+    },
+    {
+      "case": 4,
+      "agents": 500,
+      "seed": 1,
+      "roster_bytes": 24920
+    },
+    {
+      "case": 4,
+      "agents": 500,
+      "seed": 2,
+      "roster_bytes": 24915
+    },
+    {
+      "case": 4,
+      "agents": 500,
+      "seed": 3,
+      "roster_bytes": 25002
+    },
+    {
+      "case": 4,
+      "agents": 500,
+      "seed": 4,
+      "roster_bytes": 24979
+    },
+    {
+      "case": 5,
+      "agents": 10,
+      "seed": 0,
+      "roster_bytes": 527
+    },
+    {
+      "case": 5,
+      "agents": 10,
+      "seed": 1,
+      "roster_bytes": 523
+    },
+    {
+      "case": 5,
+      "agents": 10,
+      "seed": 2,
+      "roster_bytes": 512
+    },
+    {
+      "case": 5,
+      "agents": 10,
+      "seed": 3,
+      "roster_bytes": 515
+    },
+    {
+      "case": 5,
+      "agents": 10,
+      "seed": 4,
+      "roster_bytes": 500
+    },
+    {
+      "case": 5,
+      "agents": 100,
+      "seed": 0,
+      "roster_bytes": 4933
+    },
+    {
+      "case": 5,
+      "agents": 100,
+      "seed": 1,
+      "roster_bytes": 4892
+    },
+    {
+      "case": 5,
+      "agents": 100,
+      "seed": 2,
+      "roster_bytes": 4902
+    },
+    {
+      "case": 5,
+      "agents": 100,
+      "seed": 3,
+      "roster_bytes": 4935
+    },
+    {
+      "case": 5,
+      "agents": 100,
+      "seed": 4,
+      "roster_bytes": 4940
+    },
+    {
+      "case": 5,
+      "agents": 500,
+      "seed": 0,
+      "roster_bytes": 25011
+    },
+    {
+      "case": 5,
+      "agents": 500,
+      "seed": 1,
+      "roster_bytes": 24937
+    },
+    {
+      "case": 5,
+      "agents": 500,
+      "seed": 2,
+      "roster_bytes": 24932
+    },
+    {
+      "case": 5,
+      "agents": 500,
+      "seed": 3,
+      "roster_bytes": 25019
+    },
+    {
+      "case": 5,
+      "agents": 500,
+      "seed": 4,
+      "roster_bytes": 24993
+    },
+    {
+      "case": 6,
+      "agents": 10,
+      "seed": 0,
+      "roster_bytes": 502
+    },
+    {
+      "case": 6,
+      "agents": 10,
+      "seed": 1,
+      "roster_bytes": 503
+    },
+    {
+      "case": 6,
+      "agents": 10,
+      "seed": 2,
+      "roster_bytes": 492
+    },
+    {
+      "case": 6,
+      "agents": 10,
+      "seed": 3,
+      "roster_bytes": 495
+    },
+    {
+      "case": 6,
+      "agents": 10,
+      "seed": 4,
+      "roster_bytes": 488
+    },
+    {
+      "case": 6,
+      "agents": 100,
+      "seed": 0,
+      "roster_bytes": 4910
+    },
+    {
+      "case": 6,
+      "agents": 100,
+      "seed": 1,
+      "roster_bytes": 4872
+    },
+    {
+      "case": 6,
+      "agents": 100,
+      "seed": 2,
+      "roster_bytes": 4878
+    },
+    {
+      "case": 6,
+      "agents": 100,
+      "seed": 3,
+      "roster_bytes": 4920
+    },
+    {
+      "case": 6,
+      "agents": 100,
+      "seed": 4,
+      "roster_bytes": 4918
+    },
+    {
+      "case": 6,
+      "agents": 500,
+      "seed": 0,
+      "roster_bytes": 24991
+    },
+    {
+      "case": 6,
+      "agents": 500,
+      "seed": 1,
+      "roster_bytes": 24916
+    },
+    {
+      "case": 6,
+      "agents": 500,
+      "seed": 2,
+      "roster_bytes": 24909
+    },
+    {
+      "case": 6,
+      "agents": 500,
+      "seed": 3,
+      "roster_bytes": 24997
+    },
+    {
+      "case": 6,
+      "agents": 500,
+      "seed": 4,
+      "roster_bytes": 24976
+    }
+  ]
+}

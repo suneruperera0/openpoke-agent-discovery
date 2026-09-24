@@ -1,0 +1,11 @@
+{
+  "version": "field-bm25-v2-frozen",
+  "frozen_before_holdout_authoring": true,
+  "timestamp_utc": "2026-09-21T18:46:30.526912+00:00",
+  "sha256": {
+    "server/services/execution/directory.py": "79e07118aa9c7a2dd4f664bad04a7e096a5a0e719678234f8fa04a91869d75bb",
+    "evals/retrieval_v2_eval.py": "ef8e6a115f1f7bc11100ee2e3493403b81e4e2034d02bb5ec099103e485f4f10",
+    "evals/retrieval_v2_fixtures.py": "8ce6efd285ce8a2390402265618308c2fce100a671ab8a28136b8bcfaeb057af",
+    "evals/test_retrieval_v2.py": "0255cdac732f3dee2cded005100a4c4c3ffe6d016db1df1fff462975b6e76544"
+  }
+}

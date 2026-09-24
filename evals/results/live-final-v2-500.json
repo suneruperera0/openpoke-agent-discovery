@@ -1,0 +1,454 @@
+{
+  "kind": "live paired routing pilot",
+  "paid_calls": true,
+  "baseline_commit": "5b5f635935a64ab37884c025d70abb0ed731c094",
+  "treatment_commit": "a3baf789773cbd8d92220fc24874b1f7db68793a",
+  "model": "anthropic/claude-sonnet-4",
+  "budget_usd": 0.3,
+  "per_trial_budget_usd": 0.16,
+  "max_calls": 3,
+  "max_tokens": 256,
+  "seed": 917,
+  "cases": [
+    {
+      "id": "final-explicit-orchid",
+      "request": "Ask the Orchid launch coordinator to continue the launch readiness update.",
+      "owner": "Orchid launch coordinator",
+      "history": "Own Project Orchid launch readiness updates with Elena. Launch code ORC-719."
+    },
+    {
+      "id": "final-contextual-raven",
+      "request": "Continue that follow-up with the agreed owner.",
+      "context": "We previously assigned Marcus's Raven compliance renewal to the regulatory notebook.",
+      "owner": "regulatory notebook",
+      "history": "Own Raven compliance renewals with Marcus. Filing reference RVN-204."
+    }
+  ],
+  "runs": [
+    {
+      "condition": "treatment",
+      "case": "final-explicit-orchid",
+      "size": 500,
+      "seed": 917,
+      "expected_owner": "Orchid launch coordinator",
+      "selected_agents": [
+        "Orchid launch coordinator"
+      ],
+      "correct_owner": true,
+      "new_agents_created": 0,
+      "created_agent_names": [],
+      "duplicate_or_new_agent": false,
+      "failure_type": null,
+      "interaction_success": true,
+      "interaction_error": null,
+      "model_calls": 3,
+      "prompt_tokens": 14386,
+      "completion_tokens": 211,
+      "first_request_context_bytes": 17809,
+      "request_context_bytes": [
+        17809,
+        18466,
+        19424
+      ],
+      "reported_cost_usd": 0.046323,
+      "estimated_cost_usd": 0.046323,
+      "reserved_cost_usd": 0.09506400000000001,
+      "latency_seconds": 6.379,
+      "events": [
+        {
+          "event": "model",
+          "call": 1,
+          "usage": {
+            "prompt_tokens": 4605,
+            "completion_tokens": 88,
+            "total_tokens": 4693,
+            "cost": 0.015135,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.015135,
+              "upstream_inference_prompt_cost": 0.013815,
+              "upstream_inference_completions_cost": 0.00132
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "finish_reason": "tool_calls"
+        },
+        {
+          "event": "model",
+          "call": 2,
+          "usage": {
+            "prompt_tokens": 4754,
+            "completion_tokens": 121,
+            "total_tokens": 4875,
+            "cost": 0.016077,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.016077,
+              "upstream_inference_prompt_cost": 0.014262,
+              "upstream_inference_completions_cost": 0.001815
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "finish_reason": "tool_calls"
+        },
+        {
+          "event": "dispatch",
+          "name": "Orchid launch coordinator"
+        },
+        {
+          "event": "model",
+          "call": 3,
+          "usage": {
+            "prompt_tokens": 5027,
+            "completion_tokens": 2,
+            "total_tokens": 5029,
+            "cost": 0.015111,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.015111,
+              "upstream_inference_prompt_cost": 0.015081,
+              "upstream_inference_completions_cost": 3e-05
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "finish_reason": "stop"
+        }
+      ]
+    },
+    {
+      "condition": "baseline",
+      "case": "final-contextual-raven",
+      "size": 500,
+      "seed": 917,
+      "expected_owner": "regulatory notebook",
+      "selected_agents": [
+        "regulatory notebook"
+      ],
+      "correct_owner": true,
+      "new_agents_created": 0,
+      "created_agent_names": [],
+      "duplicate_or_new_agent": false,
+      "failure_type": "evaluation_budget_cap",
+      "interaction_success": false,
+      "interaction_error": "trial budget reservation exceeded",
+      "model_calls": 3,
+      "prompt_tokens": 22593,
+      "completion_tokens": 191,
+      "first_request_context_bytes": 39339,
+      "request_context_bytes": [
+        39339,
+        39968,
+        40974
+      ],
+      "reported_cost_usd": 0.070644,
+      "estimated_cost_usd": 0.070644,
+      "reserved_cost_usd": 0.12663599999999997,
+      "latency_seconds": 4.803,
+      "events": [
+        {
+          "event": "model",
+          "call": 1,
+          "usage": {
+            "prompt_tokens": 11225,
+            "completion_tokens": 75,
+            "total_tokens": 11300,
+            "cost": 0.0348,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0348,
+              "upstream_inference_prompt_cost": 0.033675,
+              "upstream_inference_completions_cost": 0.001125
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "finish_reason": "tool_calls"
+        },
+        {
+          "event": "model",
+          "call": 2,
+          "usage": {
+            "prompt_tokens": 11368,
+            "completion_tokens": 116,
+            "total_tokens": 11484,
+            "cost": 0.035844,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.035844,
+              "upstream_inference_prompt_cost": 0.034104,
+              "upstream_inference_completions_cost": 0.00174
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "finish_reason": "tool_calls"
+        },
+        {
+          "event": "dispatch",
+          "name": "regulatory notebook"
+        }
+      ]
+    },
+    {
+      "condition": "treatment",
+      "case": "final-contextual-raven",
+      "size": 500,
+      "seed": 917,
+      "expected_owner": "regulatory notebook",
+      "selected_agents": [
+        "regulatory notebook"
+      ],
+      "correct_owner": true,
+      "new_agents_created": 0,
+      "created_agent_names": [],
+      "duplicate_or_new_agent": false,
+      "failure_type": null,
+      "interaction_success": true,
+      "interaction_error": null,
+      "model_calls": 3,
+      "prompt_tokens": 14573,
+      "completion_tokens": 219,
+      "first_request_context_bytes": 18108,
+      "request_context_bytes": [
+        18108,
+        18789,
+        19817
+      ],
+      "reported_cost_usd": 0.047004,
+      "estimated_cost_usd": 0.047004,
+      "reserved_cost_usd": 0.096588,
+      "latency_seconds": 8.224,
+      "events": [
+        {
+          "event": "model",
+          "call": 1,
+          "usage": {
+            "prompt_tokens": 4663,
+            "completion_tokens": 88,
+            "total_tokens": 4751,
+            "cost": 0.015309,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.015309,
+              "upstream_inference_prompt_cost": 0.013989,
+              "upstream_inference_completions_cost": 0.00132
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "finish_reason": "tool_calls"
+        },
+        {
+          "event": "model",
+          "call": 2,
+          "usage": {
+            "prompt_tokens": 4813,
+            "completion_tokens": 129,
+            "total_tokens": 4942,
+            "cost": 0.016374,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.016374,
+              "upstream_inference_prompt_cost": 0.014439,
+              "upstream_inference_completions_cost": 0.001935
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "finish_reason": "tool_calls"
+        },
+        {
+          "event": "dispatch",
+          "name": "regulatory notebook"
+        },
+        {
+          "event": "model",
+          "call": 3,
+          "usage": {
+            "prompt_tokens": 5097,
+            "completion_tokens": 2,
+            "total_tokens": 5099,
+            "cost": 0.015321,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.015321,
+              "upstream_inference_prompt_cost": 0.015291,
+              "upstream_inference_completions_cost": 3e-05
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "finish_reason": "stop"
+        }
+      ]
+    },
+    {
+      "condition": "baseline",
+      "case": "final-explicit-orchid",
+      "size": 500,
+      "seed": 917,
+      "expected_owner": "Orchid launch coordinator",
+      "selected_agents": [
+        "Orchid launch coordinator"
+      ],
+      "correct_owner": true,
+      "new_agents_created": 0,
+      "created_agent_names": [],
+      "duplicate_or_new_agent": false,
+      "failure_type": "evaluation_budget_cap",
+      "interaction_success": false,
+      "interaction_error": "trial budget reservation exceeded",
+      "model_calls": 3,
+      "prompt_tokens": 22473,
+      "completion_tokens": 164,
+      "first_request_context_bytes": 39158,
+      "request_context_bytes": [
+        39158,
+        39767,
+        40511
+      ],
+      "reported_cost_usd": 0.069879,
+      "estimated_cost_usd": 0.069879,
+      "reserved_cost_usd": 0.12606,
+      "latency_seconds": 4.777,
+      "events": [
+        {
+          "event": "model",
+          "call": 1,
+          "usage": {
+            "prompt_tokens": 11167,
+            "completion_tokens": 73,
+            "total_tokens": 11240,
+            "cost": 0.034596,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.034596,
+              "upstream_inference_prompt_cost": 0.033501,
+              "upstream_inference_completions_cost": 0.001095
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "finish_reason": "tool_calls"
+        },
+        {
+          "event": "model",
+          "call": 2,
+          "usage": {
+            "prompt_tokens": 11306,
+            "completion_tokens": 91,
+            "total_tokens": 11397,
+            "cost": 0.035283,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.035283,
+              "upstream_inference_prompt_cost": 0.033918,
+              "upstream_inference_completions_cost": 0.001365
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "finish_reason": "tool_calls"
+        },
+        {
+          "event": "dispatch",
+          "name": "Orchid launch coordinator"
+        }
+      ]
+    }
+  ],
+  "reported_total_cost_usd": 0.23385
+}
