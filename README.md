@@ -13,7 +13,7 @@ context bound.
 
 ## Presentation
 
-- [View the take-home presentation (Google Slides)](https://docs.google.com/presentation/d/1ZxnuOo8bORoD9-M61jySKCTDu8VSOv_MrAuojnHjoCg/edit?usp=sharing)
+- [View the presentation (Google Slides)](https://docs.google.com/presentation/d/1ZxnuOo8bORoD9-M61jySKCTDu8VSOv_MrAuojnHjoCg/edit?usp=sharing)
 - [Download / view the PDF in this repo](docs/takehome-presentation.pdf)
 
 ## The problem
