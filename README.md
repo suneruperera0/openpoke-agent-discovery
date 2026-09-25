@@ -1,6 +1,6 @@
 # OpenPoke — Bounded Persistent Agent Discovery
 
-This was my General Magic engineering take-home, built on top of the open-source
+This was built on top of the open-source
 [OpenPoke](https://github.com/shlokkhemani/OpenPoke) project. I investigated one
 concrete source of **agent overload**: the Interaction Agent receives the *full*
 list of persistent Execution Agents on every request, so routing context grows
